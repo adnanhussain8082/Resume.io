@@ -1,28 +1,56 @@
 
-# React + Vite
 
-## Environment Variables
+# Resume.io
 
-To use the resume enhancement features, you must provide a Gemini API key.
+Resume.io is a modern, AI-powered resume analysis and enhancement web application built with React, Vite, and Tailwind CSS. It allows users to upload their resume (PDF), analyze it against a job description, receive ATS (Applicant Tracking System) scores, keyword matching, and personalized feedback using Google Gemini AI.
 
-1. Create a `.env` file in the project root (if it doesn't exist).
-2. Add the following line to your `.env` file:
+## Features
 
-```
-VITE_GEMINI_API_KEY=your-gemini-api-key-here
-```
+- Upload your resume in PDF format
+- Extracts and analyzes resume content using AI
+- ATS scoring and compatibility analysis
+- Keyword matching with job descriptions
+- Personalized feedback and enhancement suggestions
+- Secure API key management via environment variables
 
-Replace `your-gemini-api-key-here` with your actual Gemini API key.
+## Getting Started
 
-The app will automatically use this key for Gemini API requests.
+1. **Clone the repository:**
+	```sh
+	git clone https://github.com/adnanhussain8082/Resume.io.git
+	cd Resume.io/rim
+	```
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+2. **Install dependencies:**
+	```sh
+	npm install
+	```
 
-Currently, two official plugins are available:
+3. **Set up your Gemini API key:**
+	- Create a `.env` file in the project root.
+	- Add:
+	  ```
+	  VITE_GEMINI_API_KEY=your-gemini-api-key-here
+	  ```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+4. **Run the development server:**
+	```sh
+	npm run dev
+	```
 
-## Expanding the ESLint configuration
+## Usage
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Upload your resume (PDF).
+2. Enter a job description.
+3. Select the type of analysis (ATS Score, Enhancer, Feedback, Keyword Match).
+4. Click "Analyze Resume" to receive instant, AI-powered results.
+
+## Tech Stack
+- React 19
+- Vite
+- Tailwind CSS
+- pdfjs-dist (for PDF parsing)
+- Google Gemini API
+
+## License
+This project is licensed under the MIT License.
